@@ -3,6 +3,8 @@ Python code for representing a number as a list of 1 and 0s. Bidirectional trans
 
 Also, will calculate Hamming distance between two lists of same length.
 
+Functionality to convert a unipolar (0|1) representation to bipolar(-1|1) and vice versa. Useful for Bidirectional Associative Memory. (BAM)
+
 # Example:
 ```
 # Number to fixed length list with padding
@@ -47,4 +49,21 @@ Output:
 [1, 1, 0, 0, 0, 1]
 [0, 1, 0, 1, 0, 1]
 2
+```
+Example bipolar:
+```
+    # Test bipolar conversion
+    x.bipolar()
+    print(x.binlist)
+    # Test unipolar conversion
+    x.unipolar()
+    print(x.binlist)
+    x.implode(y.binlist)
+    print(x.number)
+```
+Output bipolar:
+```
+        [1, 1, -1, -1, -1, 1]
+        [1, 1, 0, 0, 0, 1]
+        21
 ```
