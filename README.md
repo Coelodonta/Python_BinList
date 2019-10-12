@@ -74,3 +74,38 @@ Output bipolar:
         [1, 1, 0, 0, 0, 1]
         21
 ```
+Example norm:
+```
+    # Test norm
+	print(x.norm())
+```
+Output norm:
+```
+    3
+```
+Example complement:
+```
+    # Test complement
+	print(x.binlist)
+	print(x.complement())
+```
+Output complement:
+```
+	    [0, 1, 0, 1, 0, 1]
+		[1, 0, 1, 0, 1, 0]	
+
+```
+Example differ(ence): (Note difference is a Python function, thus differ())
+```
+    # Test difference
+	print(x.differ(y))
+	y.implode(x.differ(y))
+	print(x.differ(y))
+```
+Output differ(ence):
+```
+		[0, 0, 0, 0, 0, 0]
+		[0, 1, 0, 1, 0, 1]
+```
+
+
