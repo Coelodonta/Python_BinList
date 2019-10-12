@@ -5,6 +5,13 @@ Also, will calculate Hamming distance between two lists of same length.
 
 Functionality to convert a unipolar (0|1) representation to bipolar(-1|1) and vice versa. Useful for Bidirectional Associative Memory. (BAM)
 
+# Changes:
+Added some functions useful in Machine Learning:
+
+- norm() - return count of 1s in list
+- complement() - returns a list with 1 in place of 0 and 0 in place of 1
+- difference() - compares two BinList objects and returns a list with 1 in the positions where the lists are different and 0 where they are the same. I.e. effectively an XOR of the lists.
+
 # Example:
 ```
 # Number to fixed length list with padding
